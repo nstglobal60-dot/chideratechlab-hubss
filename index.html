@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn practical ICT and digital skills at ChideraTechLab-Hub, Awada-Obosi, Anambra State.">
+  <title>ChideraTechLab-Hub | Practical ICT & Digital Skills</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="header">
+  <a class="brand" href="#home">
+    <img src="./logo-image/logo-image.png" alt="ChideraTechLab-Hub logo">
+    <span>CHIDERA<span class="blue">TECHLAB-HUB</span></span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+
+  <nav id="navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#courses">Courses</a>
+    <a href="#register">Registration</a>
+    <a href="#contact">Contact</a>
+    <button class="admin-button" id="adminButton">Admin Login</button>
+  </nav>
+</header>
+
+<main>
+  <!-- LANDING PAGE -->
+  <section class="hero" id="home">
+    <div class="hero-banner">
+      <img
+        src="./logo-image/Ict background.jpeg"
+        alt="ChideraTechLab-Hub ICT training centre banner"
+        id="heroBanner"
+      >
+    </div>
+
+    <div class="hero-content">
+      <span class="eyebrow">WELCOME TO CHIDERATECHLAB-HUB</span>
+      <h1>Learn Digital Skills. Build Your Future.</h1>
+      <p>
+        Develop practical computer and technology skills through guided
+        training, hands-on exercises and real-world projects.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#courses">Explore Our Courses</a>
+        <a class="btn outline" href="#register">Register Now</a>
+      </div>
+      <div class="hero-points">
+        <span>✓ Practical Training</span>
+        <span>✓ Beginner Friendly</span>
+        <span>✓ Real-World Projects</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="section-heading left">
+      <span class="eyebrow">ABOUT OUR CENTRE</span>
+      <h2>Practical Learning for a Digital World</h2>
+      <p>
+        ChideraTechLab-Hub is an ICT and digital skills training centre
+        focused on helping learners build useful computer, office and
+        technology skills.
+      </p>
+      <p>
+        Our approach combines instructor-guided lessons, practical exercises,
+        assignments and projects that help learners apply what they learn.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature">
+        <span class="feature-icon">01</span>
+        <h3>Hands-on Learning</h3>
+        <p>Practise the skills you learn with guided computer exercises.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">02</span>
+        <h3>Practical Projects</h3>
+        <p>Work on assignments based on real office and business tasks.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">03</span>
+        <h3>Skills Development</h3>
+        <p>Build confidence and improve your digital capabilities.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">04</span>
+        <h3>Career Preparation</h3>
+        <p>Develop skills that can support work, business and further learning.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section courses-section" id="courses">
+    <div class="section-heading">
+      <span class="eyebrow">LEARN WITH US</span>
+      <h2>Our Professional Training Courses</h2>
+      <p>
+        Explore our programmes. Select a course to see the topics, skills,
+        practical projects, duration, requirements and fees.
+      </p>
+    </div>
+    <div class="course-grid" id="courseGrid"></div>
+  </section>
+
+  <!-- REGISTRATION -->
+  <section class="section registration-section" id="register">
+    <div class="section-heading">
+      <span class="eyebrow">TAKE THE NEXT STEP</span>
+      <h2>Student Registration</h2>
+      <p>Complete the form to submit your registration details.</p>
+    </div>
+
+    <form id="registrationForm" class="form-card">
+      <div class="form-grid">
+        <label>Full Name *
+          <input id="studentName" required placeholder="Enter your full name">
+        </label>
+        <label>Phone Number *
+          <input id="studentPhone" type="tel" required placeholder="Enter phone number">
+        </label>
+        <label>Email Address
+          <input id="studentEmail" type="email" placeholder="Enter email address">
+        </label>
+        <label>Select Course *
+          <select id="studentCourse" required>
+            <option value="">Choose a course</option>
+          </select>
+        </label>
+        <label>Preferred Start Date
+          <input id="studentStart" type="date">
+        </label>
+        <label>Payment Status
+          <select id="studentPayment">
+            <option>Not yet paid</option>
+            <option>Part payment</option>
+            <option>Fully paid</option>
+          </select>
+        </label>
+        <label>Home Address
+          <input id="studentAddress" placeholder="Enter home address">
+        </label>
+        <label>Parent/Guardian Phone
+          <input id="studentGuardian" type="tel" placeholder="Optional">
+        </label>
+      </div>
+
+      <label>Additional Information
+        <textarea id="studentNotes" rows="4" placeholder="Any additional information"></textarea>
+      </label>
+
+      <button class="btn primary" type="submit">Submit Registration</button>
+      <p id="registrationMessage" class="message" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- PAYMENT -->
+  <section class="section payment-section">
+    <div class="section-heading">
+      <span class="eyebrow">OFFICIAL PAYMENT DETAILS</span>
+      <h2>Pay for Your Training</h2>
+      <p>Use the official account details below and contact the centre to confirm your payment.</p>
+    </div>
+
+    <div class="bank-card">
+      <div class="bank-top">
+        <span>OFFICIAL TRAINING ACCOUNT</span>
+        <strong>FIRST BANK</strong>
+      </div>
+      <p><span>Account Name</span><strong>CHIDERATECHLAB-HUB</strong></p>
+      <p><span>Account Number</span><strong class="account-number">2048824327</strong></p>
+      <button class="btn bank-copy" id="copyBank">Copy Account Details</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div>
+      <span class="eyebrow">CONTACT US</span>
+      <h2>Start Building Your Digital Skills Today.</h2>
+      <p>Contact us for course enquiries, fees, registration and training information.</p>
+    </div>
+    <div class="contact-card">
+      <p><strong>Address</strong>No. 68 Nwaziki Street, Awada-Obosi, Anambra State</p>
+      <p><strong>Phone / WhatsApp</strong>+2348146180433</p>
+      <p><strong>Email</strong>chideratchlab93@gmail.com</p>
+      <a class="btn primary" href="https://wa.me/2348146180433" target="_blank" rel="noopener">
+        Chat with Us on WhatsApp
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <a href="#home" class="footer-brand">CHIDERATECHLAB-HUB</a>
+  <p>Learn. Practice. Build. Grow.</p>
+  <p>© <span id="year"></span> ChideraTechLab-Hub. All rights reserved.</p>
+</footer>
+
+<!-- COURSE DETAILS -->
+<div class="modal" id="courseModal" role="dialog" aria-modal="true" aria-label="Course details">
+  <div class="modal-content">
+    <button class="modal-close" data-close="courseModal" aria-label="Close">&times;</button>
+    <div id="courseDetails"></div>
+  </div>
+</div>
+
+<!-- ADMIN LOGIN -->
+<div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-label="Administrator login">
+  <div class="modal-content login-content">
+    <button class="modal-close" data-close="loginModal" aria-label="Close">&times;</button>
+    <h2>Administrator Login</h2>
+    <p>Sign in to manage course information and student records.</p>
+    <form id="loginForm">
+      <label>Admin Password
+        <input type="password" id="adminPassword" required>
+      </label>
+      <button class="btn primary full" type="submit">Login</button>
+      <p id="loginMessage" class="message"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ADMIN DASHBOARD -->
+<section class="admin-dashboard" id="adminDashboard">
+  <div class="admin-heading">
+    <div>
+      <span class="eyebrow">PRIVATE MANAGEMENT AREA</span>
+      <h2>Admin Dashboard</h2>
+      <p>Manage your courses and student records.</p>
+    </div>
+    <button class="btn outline-dark" id="logoutButton">Logout</button>
+  </div>
+
+  <div class="admin-stats">
+    <div class="stat"><span>Registered Students</span><strong id="registeredCount">0</strong></div>
+    <div class="stat"><span>Graduated Students</span><strong id="graduatedCount">0</strong></div>
+    <div class="stat"><span>Total Students</span><strong id="totalCount">0</strong></div>
+  </div>
+
+  <div class="admin-panel">
+    <h3>Manage Course Information</h3>
+    <p>Only use image paths or image URLs you have permission to use.</p>
+    <form id="courseEditForm" class="form-grid">
+      <label>Choose Course
+        <select id="editCourse"></select>
+      </label>
+      <label>Course Fee (₦)
+        <input type="number" id="editPrice" min="0" required>
+      </label>
+      <label class="wide">Course Image Path or URL
+        <input id="editImage" required placeholder="./course-image/example.jpg">
+      </label>
+      <div class="wide">
+        <p class="small-label">Image Preview</p>
+        <img id="imagePreview" class="image-preview" alt="Selected course preview">
+      </div>
+      <button class="btn primary" type="submit">Save Course Changes</button>
+    </form>
+    <p class="message" id="editMessage"></p>
+  </div>
+
+  <div class="admin-panel">
+    <h3>Student Records</h3>
+    <div class="student-tools">
+      <input type="search" id="studentSearch" placeholder="Search student name, phone, ID or course">
+      <button class="btn outline-dark" id="exportStudents">Export CSV</button>
+    </div>
+
+    <div class="record-tabs">
+      <button class="tab active" data-tab="registered">Registered Students</button>
+      <button class="tab" data-tab="graduated">Graduated Students</button>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Student ID</th><th>Name</th><th>Phone</th><th>Course</th>
+            <th>Payment</th><th>Date Registered</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="admin-panel">
+    <h3>Change Admin Password</h3>
+    <p>Choose a new password of at least 10 characters.</p>
+    <form id="passwordForm" class="password-form">
+      <input type="password" id="newAdminPassword" minlength="10" required placeholder="Enter new password">
+      <button class="btn primary" type="submit">Update Password</button>
+    </form>
+    <p id="passwordMessage" class="message"></p>
+  </div>
+</section>
+
+<script src="./script.js"></script>
+</body>
+</html>
